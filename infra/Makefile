@@ -8,7 +8,7 @@ endif
 ifneq ($(shell docker compose version 2>/dev/null),)
 DC=docker compose
 else ifneq ($(shell docker-compose --version 2>/dev/null),)
-DC=docker-compose
+DC=docker compose
 else
 $(error ************  docker compose ou docker-compose nao encontrado. Ou inexistente para o usuario do make. Verifique... ************)
 endif
